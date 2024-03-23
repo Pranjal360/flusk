@@ -2,3 +2,5 @@ Flask
 Gunicorn
 joblib
 numpy
+sklearn
+pickle
