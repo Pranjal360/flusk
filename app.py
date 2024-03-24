@@ -3,7 +3,6 @@ import joblib
 import numpy as np
 
 app = Flask(__name__)
-
 # Load the pickled model
 model = joblib.load('train_model.sav')
 
