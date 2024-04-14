@@ -27,10 +27,12 @@
 
 from flask import Flask, request, jsonify
 import smtplib
+from flask_cors import CORS
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
 app = Flask(__name__)
+CORS(app)  # Enable CORS for all routes
 
 @app.route('/send_email', methods=['POST'])
 def send_email():
